@@ -35,6 +35,13 @@
         #     PORT = "$PORT";
         #   };
         # };
+        web = {
+          command = ["python3" "-m" "http.server"];
+          manager = "web";
+          env = {
+            PORT = "$PORT";
+          };
+        };
       };
     };
 
